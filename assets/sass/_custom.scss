@@ -1,37 +1,35 @@
 // Home page aurora gradient background
-body.notransition {
-    &:has(.home-wrapper) {
-        position: relative;
-        overflow-x: hidden;
+body.home-page {
+    position: relative;
+    overflow-x: hidden;
+}
 
-        &::before {
-            content: '';
-            position: fixed;
-            top: -20%;
-            left: -10%;
-            width: 60%;
-            height: 70%;
-            background: radial-gradient(ellipse at center, rgba(147, 197, 253, 0.45) 0%, rgba(196, 221, 254, 0.2) 50%, transparent 70%);
-            border-radius: 50%;
-            filter: blur(60px);
-            z-index: 0;
-            pointer-events: none;
-        }
+body.home-page::before {
+    content: '';
+    position: fixed;
+    top: -20%;
+    left: -10%;
+    width: 60%;
+    height: 70%;
+    background: radial-gradient(ellipse at center, rgba(147, 197, 253, 0.5) 0%, rgba(196, 221, 254, 0.25) 50%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: 0;
+    pointer-events: none;
+}
 
-        &::after {
-            content: '';
-            position: fixed;
-            top: 10%;
-            right: -10%;
-            width: 50%;
-            height: 60%;
-            background: radial-gradient(ellipse at center, rgba(186, 214, 254, 0.35) 0%, rgba(219, 234, 254, 0.15) 50%, transparent 70%);
-            border-radius: 50%;
-            filter: blur(80px);
-            z-index: 0;
-            pointer-events: none;
-        }
-    }
+body.home-page::after {
+    content: '';
+    position: fixed;
+    top: 5%;
+    right: -10%;
+    width: 55%;
+    height: 65%;
+    background: radial-gradient(ellipse at center, rgba(186, 214, 254, 0.4) 0%, rgba(219, 234, 254, 0.2) 50%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .home-wrapper {
