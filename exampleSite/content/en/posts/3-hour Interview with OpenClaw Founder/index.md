@@ -3,6 +3,7 @@ title: 3-hour Interview with OpenClaw Founder
 date: 2026-03-25
 author: neigelmlm
 description: OpenClaw 创始人访谈
+cover: cover.png
 tags:
     - OpenClaw
 ---
