@@ -36,3 +36,21 @@ body.home-page::after {
     position: relative;
     z-index: 1;
 }
+
+// Language selector - plain text style
+.lang-list {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: $base-font-size;
+    font-family: $sans-family;
+    opacity: 0.7;
+    padding: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}
