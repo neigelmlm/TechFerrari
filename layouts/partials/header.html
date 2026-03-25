@@ -37,25 +37,18 @@
                     <span>|</span>
                 </li>
                 <!-- Language List -->
-                {{ if .IsTranslated }}
+                {{ if gt (len .Site.Languages) 1 }}
                     <li>
                         <select aria-label="Select Language" class="lang-list" id="select-language" onchange="location = this.value;">
-                            {{ $siteLanguages := .Site.Languages}}
-                            {{ $pageLang := .Page.Lang}}
-                            {{ range .Page.AllTranslations }}
-                                {{ $translation := .}}
-                                {{ range $siteLanguages }}
-                                    {{ if eq $translation.Lang .Lang }}
-                                        {{ $selected := false }}
-                                        {{ if eq $pageLang .Lang}}
-                                            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
-                                        {{ else }}
-                                            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-                                        {{ end }}
-                                    {{ end }}
+                            {{ $pageLang := .Page.Lang }}
+                            {{ range .Site.Languages }}
+                                {{ if eq $pageLang .Lang }}
+                                    <option value="{{ $.Site.Home.Permalink }}{{ if ne .Lang $.Site.DefaultContentLanguage }}{{ .Lang }}/{{ end }}" selected>{{ .LanguageName }}</option>
+                                {{ else }}
+                                    <option value="{{ $.Site.Home.Permalink }}{{ if ne .Lang $.Site.DefaultContentLanguage }}{{ .Lang }}/{{ end }}">{{ .LanguageName }}</option>
                                 {{ end }}
                             {{ end }}
-                        </select>                
+                        </select>
                     </li>
                 {{ end }}
             </ul>
