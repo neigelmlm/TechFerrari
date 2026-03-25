@@ -50,8 +50,14 @@ body.home-page::after {
     opacity: 0.7;
     padding: 0;
     margin-right: 20px;
+    color: $black;
 
     &:hover {
         opacity: 1;
     }
+}
+
+html.dark .lang-list {
+    color: $dark-white;
+    background: transparent;
 }
