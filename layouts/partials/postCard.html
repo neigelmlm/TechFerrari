@@ -24,7 +24,7 @@
         {{ if $cover }}
         <img src="{{ $cover.RelPermalink }}" alt="{{ $.Title }}" loading="lazy" />
         {{ else }}
-        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+        <img src="{{ $.RelPermalink }}{{ . }}" alt="{{ $.Title }}" loading="lazy" />
         {{ end }}
     </div>
     {{ end }}
