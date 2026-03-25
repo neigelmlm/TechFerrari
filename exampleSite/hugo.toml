@@ -59,7 +59,7 @@ theme = "hugo-blog-awesome"
 
 [Languages.en-gb.params]
   sitename = "TechFarrari"
-  defaultColor = "dark"
+  defaultColor = "light"
   description = "Neigelmlm's personal website"
   mainSections = ['posts']
   toc = true
@@ -109,7 +109,7 @@ theme = "hugo-blog-awesome"
 
 [Languages.zh-cn.params]
   sitename = "TechFarrari"
-  defaultColor = "dark"
+  defaultColor = "light"
   description = "neigelmlm的个人网站"
   mainSections = ['posts']
   toc = true
