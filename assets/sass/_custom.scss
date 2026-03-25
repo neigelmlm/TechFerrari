@@ -61,3 +61,113 @@ html.dark .lang-list {
     color: $dark-white;
     background: transparent;
 }
+
+// Post card - media style with thumbnail
+.post-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px 0;
+    gap: 24px;
+
+    &:not(:first-child) {
+        border-top: 1px solid $light;
+    }
+}
+
+.post-item-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.post-item-title {
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 1.4;
+
+    a {
+        color: $black !important;
+        text-decoration: none;
+
+        &:hover {
+            color: $text-link-blue !important;
+        }
+    }
+}
+
+.post-item-summary {
+    margin: 0;
+    font-size: $base-font-size;
+    color: $text-base-color;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-item-footer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: $small-font-size;
+    color: $gray;
+}
+
+.post-item-meta {
+    color: $gray;
+}
+
+.post-item-author {
+    color: $gray;
+}
+
+.post-item-thumbnail {
+    flex-shrink: 0;
+    width: 160px;
+    height: 106px;
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    @include media-query($on-mobile) {
+        width: 100px;
+        height: 66px;
+    }
+}
+
+// Dark mode overrides
+html.dark {
+    .post-item {
+        &:not(:first-child) {
+            border-top-color: $dark-smoke;
+        }
+    }
+
+    .post-item-title a {
+        color: $dark-white !important;
+    }
+
+    .post-item-summary {
+        color: $dark-text-base-color;
+    }
+
+    .post-item-footer,
+    .post-item-meta,
+    .post-item-author {
+        color: $dark-gray;
+    }
+}
