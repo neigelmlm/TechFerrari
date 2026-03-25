@@ -3,3 +3,6 @@
 exampleSite/public/
 exampleSite/resources/
 exampleSite/.hugo_build.lock
+exampleSite/themes/
+.DS_Store
+.claude/
