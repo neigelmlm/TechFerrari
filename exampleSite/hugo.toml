@@ -35,7 +35,7 @@ theme = "hugo-blog-awesome"
 
 ############################## English language ################################
 [Languages.en-gb]
-  languageName = "English"
+  languageName = "EN"
   languageCode = "en-gb"
   contentDir = "content/en"
   weight = 1
@@ -85,7 +85,7 @@ theme = "hugo-blog-awesome"
 
 ############################## Chinese language ################################
 [Languages.zh-cn]
-  languageName = "Chinese"
+  languageName = "中文"
   languageCode = "zh-cn"
   contentDir = "content/zh"
   weight = 2
