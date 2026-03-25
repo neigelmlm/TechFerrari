@@ -1,0 +1,151 @@
+title = "Awesome Hugo blog"
+baseURL = '/'
+
+# This is what goes in <html lang="">
+languageCode = 'en-us'
+
+# This defines how dates are formatted
+defaultContentLanguage = "en-gb"
+
+# Enable emojis globally
+enableEmoji = true
+ignoreErrors = ["additional-script-loading-error"] # ignore error of loading additional scripts.
+ignoreLogs = ['shortcode-x-getremote']
+timeout = "120s"
+
+# traditional way: theme component resides in directory 'themes'
+theme = "hugo-blog-awesome"
+
+[services]
+  [services.googleAnalytics]
+    id = '' # G-MEASUREMENT_ID
+  [services.disqus]
+    shortname = ''
+
+# set markup.highlight.noClasses=false to enable code highlight
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+	[markup.tableOfContents]
+		startLevel = 2 # ToC starts from H2
+		endLevel = 4 # ToC ends at H4
+		ordered = false # generates <ul> instead of <ol>
+
+############################## English language ################################
+[Languages.en-gb]
+  languageName = "English"
+  languageCode = "en-gb"
+  contentDir = "content/en"
+  weight = 1
+
+  [Languages.en-gb.menu]
+  [[Languages.en-gb.menu.main]]
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[Languages.en-gb.menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 20
+  [[Languages.en-gb.menu.main]]
+    pageRef="about"
+    name = 'About'
+    url = '/about/'
+    weight = 30
+
+[Languages.en-gb.params]
+  sitename = "TechFarrari"
+  defaultColor = "dark"
+  description = "Neigelmlm's personal website"
+  mainSections = ['posts']
+  toc = true
+  tocOpen = false
+  goToTop = true
+  additionalScripts = ['js/custom.js', 'js/custom-2.js']
+  dateFormat = ""
+  rssFeedDescription = "summary"
+
+[Languages.en-gb.params.author]
+  avatar = "avatar.png"
+  intro = "TechFarrari"
+  name = "Sidharth R"
+  description = "Neigelmlm's personal website"
+
+[Languages.en-gb.params.webmanifest]
+  name = "sitename"
+  short_name = "sitename"
+  start_url = "/"
+  theme_color = "#ffffff"
+  background_color = "#fff"
+  display = "standalone"
+
+############################## Chinese language ################################
+[Languages.zh-cn]
+  languageName = "Chinese"
+  languageCode = "zh-cn"
+  contentDir = "content/zh"
+  weight = 2
+
+  [Languages.zh-cn.menu]
+  [[Languages.zh-cn.menu.main]]
+    pageRef="/"
+    name = '首页'
+    url = '/'
+    weight = 10
+  [[Languages.zh-cn.menu.main]]
+    pageRef="posts"
+    name = '文章'
+    url = '/posts/'
+    weight = 20
+  [[Languages.zh-cn.menu.main]]
+    pageRef="about"
+    name = '关于'
+    url = '/about/'
+    weight = 30
+
+[Languages.zh-cn.params]
+  sitename = "TechFarrari"
+  defaultColor = "dark"
+  description = "neigelmlm的个人网站"
+  mainSections = ['posts']
+  toc = true
+  tocOpen = false
+  goToTop = true
+  additionalScripts = ['js/custom.js', 'js/custom-2.js']
+  dateFormat = "2006年01月02日"
+  rssFeedDescription = "summary"
+
+[Languages.zh-cn.params.author]
+  avatar = "avatar.png"
+  intro = "TechFarrari"
+  name = "Sidharth R"
+  description = "neigelmlm的个人网站"
+
+[Languages.zh-cn.params.webmanifest]
+  name = "sitename"
+  short_name = "sitename"
+  start_url = "/"
+  theme_color = "#ffffff"
+  background_color = "#fff"
+  display = "standalone"
+
+###################################################################
+
+[params.browserconfig]
+  TileColor = "#ffffff"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/neigelmlm"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://x.com/neigelmlm"
+
+[[params.socialIcons]]
+name = "Rss"
+url = "/index.xml"
