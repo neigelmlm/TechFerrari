@@ -49,6 +49,7 @@ body.home-page::after {
     font-family: $sans-family;
     opacity: 0.7;
     padding: 0;
+    margin-right: 20px;
 
     &:hover {
         opacity: 1;
