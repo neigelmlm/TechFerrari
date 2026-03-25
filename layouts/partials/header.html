@@ -43,9 +43,9 @@
                             {{ $pageLang := .Page.Lang }}
                             {{ range .Site.Languages }}
                                 {{ if eq $pageLang .Lang }}
-                                    <option value="{{ $.Site.Home.Permalink }}{{ if ne .Lang $.Site.DefaultContentLanguage }}{{ .Lang }}/{{ end }}" selected>{{ .LanguageName }}</option>
+                                    <option value="{{ $.Site.Home.Permalink }}{{ if ne .Lang $.Site.Language.Lang }}{{ .Lang }}/{{ end }}" selected>{{ .LanguageName }}</option>
                                 {{ else }}
-                                    <option value="{{ $.Site.Home.Permalink }}{{ if ne .Lang $.Site.DefaultContentLanguage }}{{ .Lang }}/{{ end }}">{{ .LanguageName }}</option>
+                                    <option value="{{ $.Site.Home.Permalink }}{{ if ne .Lang $.Site.Language.Lang }}{{ .Lang }}/{{ end }}">{{ .LanguageName }}</option>
                                 {{ end }}
                             {{ end }}
                         </select>
