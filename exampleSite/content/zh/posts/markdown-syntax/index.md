@@ -4,6 +4,7 @@ date: 2023-02-11
 author: Hugo Authors
 description: 展示基本 Markdown 语法和 HTML 元素格式化的示例文章。
 isStarred: true
+cover: cover.png
 ---
 
 本文提供了 Hugo 内容文件中可以使用的 Markdown 语法示例，同时展示了 Hugo 主题中是否对基本 HTML 元素进行了 CSS 装饰。

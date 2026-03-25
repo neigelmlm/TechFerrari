@@ -2,6 +2,7 @@
 title: 目录
 date: 2023-05-02
 description: 在 Hugo 博客 awesome 主题中设置目录
+cover: cover.png
 ---
 
 ## 目录

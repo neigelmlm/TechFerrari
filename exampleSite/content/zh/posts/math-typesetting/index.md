@@ -4,6 +4,7 @@ title: 数学排版 - 在博客文章中使用数学符号
 date: 2023-04-01
 description: KaTeX 设置简要指南
 math: true
+cover: cover.png
 ---
 
 在 Hugo 项目中，可以通过使用 [第三方 JavaScript 库](https://github.com/hugo-sid/hugo-blog-awesome/blob/main/layouts/partials/helpers/katex.html) 来启用数学符号。

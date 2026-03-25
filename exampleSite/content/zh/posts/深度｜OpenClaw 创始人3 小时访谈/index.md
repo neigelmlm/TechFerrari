@@ -5,6 +5,7 @@ author: neigelmlm
 description: OpenClaw 创始人访谈
 tags:
     - OpenClaw
+cover: cover.png
 ---
 如果 Peter Steinberger （openclaw 创始人）是对的， 那么未来最先被重做的不是程序员，而是 App 本身 。OpenClaw 爆红之后，这位创始人把判断压得非常狠：AI agent 会吃掉 80% 的应用，软件入口也会从“打开哪个 App”变成“把 任务交给谁来完成 ”。
 

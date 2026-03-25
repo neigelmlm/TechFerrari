@@ -3,6 +3,7 @@ author: Hugo Authors
 title: 占位文本
 date: 2023-02-07
 description: 一篇包含占位文本的文章
+cover: cover.png
 ---
 
 Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.

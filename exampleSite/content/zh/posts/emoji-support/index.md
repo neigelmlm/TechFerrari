@@ -5,6 +5,7 @@ author: Hugo Authors
 description: 在 Hugo 中使用 Emoji 的指南
 tags:
     - emoji
+cover: cover.png
 ---
 
 在 Hugo 项目中有多种方式可以启用 Emoji。
