@@ -18,9 +18,14 @@
             {{ end }}
         </div>
     </div>
-    {{ if .Params.cover }}
+    {{ with .Params.cover }}
+    {{ $cover := $.Resources.GetMatch . }}
     <div class="post-item-thumbnail">
-        <img src="{{ .Params.cover }}" alt="{{ .Title }}" loading="lazy" />
+        {{ if $cover }}
+        <img src="{{ $cover.RelPermalink }}" alt="{{ $.Title }}" loading="lazy" />
+        {{ else }}
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+        {{ end }}
     </div>
     {{ end }}
 </article>
